@@ -96,23 +96,28 @@ const talks: Talk[] = [
 
 export default function HomePage() {
 	return (
-		<div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-stone-100 dark:from-slate-900 dark:to-stone-800">
+		<div className="flex flex-col min-h-screen bg-[#292929]">
 			<header className="container mx-auto px-4 py-8 md:py-12">
 				<div className="flex flex-col md:flex-row items-center gap-6">
-					<Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-slate-200 dark:border-slate-700 shadow-lg">
+					<Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-slate-700 shadow-lg">
 						<AvatarImage src="/lindsey.jpg" alt="Lindsey Simon" />
 						<AvatarFallback>LS</AvatarFallback>
 					</Avatar>
 					<div>
-						<h1 className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-slate-100">
+						<h1 className="text-4xl md:text-5xl font-bold text-white">
 							Lindsey Simon
 						</h1>
-						<p className="text-xl text-slate-600 dark:text-slate-300 mt-1">
+						<p className="text-xl text-slate-300 mt-1">
 							Builder of products, teams, and communities. Advisor. Musician.
 							Conductor.
 						</p>
 						<div className="mt-4 flex gap-3">
-							<Button variant="outline" size="icon" asChild>
+							<Button
+								variant="outline"
+								size="icon"
+								asChild
+								className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
+							>
 								<Link
 									href="https://github.com/elsigh"
 									target="_blank"
@@ -122,7 +127,12 @@ export default function HomePage() {
 									<Github className="h-5 w-5" />
 								</Link>
 							</Button>
-							<Button variant="outline" size="icon" asChild>
+							<Button
+								variant="outline"
+								size="icon"
+								asChild
+								className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
+							>
 								<Link
 									href="https://x.com/elsigh"
 									target="_blank"
@@ -132,7 +142,12 @@ export default function HomePage() {
 									<Twitter className="h-5 w-5" />
 								</Link>
 							</Button>
-							<Button variant="outline" size="icon" asChild>
+							<Button
+								variant="outline"
+								size="icon"
+								asChild
+								className="border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
+							>
 								<Link
 									href="https://www.linkedin.com/in/lindseysimon/"
 									target="_blank"
@@ -147,12 +162,20 @@ export default function HomePage() {
 				</div>
 			</header>
 
+			<div className="w-full relative py-16">
+				<div
+					className="absolute inset-0 opacity-20 bg-center bg-no-repeat bg-contain"
+					style={{ backgroundImage: "url(/vercel.png)" }}
+				/>
+				<div className="container mx-auto px-4 relative z-10 text-center">
+					<h2 className="text-4xl font-bold text-white">Powered by Vercel</h2>
+				</div>
+			</div>
+
 			<main className="container mx-auto px-4 py-8 flex-grow">
 				<section id="about" className="mb-12 md:mb-16">
-					<h2 className="text-3xl font-semibold mb-6 text-slate-700 dark:text-slate-200">
-						About Me
-					</h2>
-					<div className="space-y-4 text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+					<h2 className="text-3xl font-semibold mb-6 text-white">About Me</h2>
+					<div className="space-y-4 text-slate-300 text-lg leading-relaxed">
 						<p>
 							I'm an engineer with a passion for the web platform, developer
 							experience, and fostering innovation. My journey has taken me
@@ -170,24 +193,22 @@ export default function HomePage() {
 				</section>
 
 				<section id="projects" className="mb-12 md:mb-16">
-					<h2 className="text-3xl font-semibold mb-6 text-slate-700 dark:text-slate-200">
-						Projects
-					</h2>
+					<h2 className="text-3xl font-semibold mb-6 text-white">Projects</h2>
 					<div className="grid md:grid-cols-2 gap-6">
 						{projects.map((project) => (
 							<Card
 								key={project.name}
-								className="bg-white dark:bg-slate-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
+								className="bg-slate-800 shadow-lg hover:shadow-xl transition-shadow duration-300 border-slate-700"
 							>
 								<CardHeader className="flex flex-row items-center gap-4">
 									{project.icon && (
-										<project.icon className="h-8 w-8 text-sky-600 dark:text-sky-400" />
+										<project.icon className="h-8 w-8 text-sky-400" />
 									)}
 									<div>
-										<CardTitle className="text-xl text-slate-800 dark:text-slate-100">
+										<CardTitle className="text-xl text-white">
 											{project.name}
 										</CardTitle>
-										<CardDescription className="text-slate-600 dark:text-slate-400">
+										<CardDescription className="text-slate-400">
 											{project.description}
 										</CardDescription>
 									</div>
@@ -196,7 +217,7 @@ export default function HomePage() {
 									<Button
 										variant="ghost"
 										asChild
-										className="text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300"
+										className="text-sky-400 hover:text-sky-300 hover:bg-slate-700"
 									>
 										<Link
 											href={project.href}
@@ -213,20 +234,20 @@ export default function HomePage() {
 				</section>
 
 				<section id="talks" className="mb-12 md:mb-16">
-					<h2 className="text-3xl font-semibold mb-6 text-slate-700 dark:text-slate-200">
+					<h2 className="text-3xl font-semibold mb-6 text-white">
 						Talks & Interviews
 					</h2>
 					<div className="space-y-6">
 						{talks.map((talk) => (
 							<Card
 								key={talk.title}
-								className="bg-white dark:bg-slate-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300"
+								className="bg-slate-800 shadow-lg hover:shadow-xl transition-shadow duration-300 border-slate-700"
 							>
 								<CardHeader>
-									<CardTitle className="text-xl text-slate-800 dark:text-slate-100">
+									<CardTitle className="text-xl text-white">
 										{talk.title}
 									</CardTitle>
-									<CardDescription className="text-slate-600 dark:text-slate-400">
+									<CardDescription className="text-slate-400">
 										{talk.platform}
 									</CardDescription>
 								</CardHeader>
@@ -234,7 +255,7 @@ export default function HomePage() {
 									<Button
 										variant="ghost"
 										asChild
-										className="text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300"
+										className="text-sky-400 hover:text-sky-300 hover:bg-slate-700"
 									>
 										<Link
 											href={talk.href}
@@ -251,7 +272,7 @@ export default function HomePage() {
 				</section>
 			</main>
 
-			<footer className="container mx-auto px-4 py-8 text-center text-slate-600 dark:text-slate-400">
+			<footer className="container mx-auto px-4 py-8 text-center text-slate-400">
 				<p>
 					&copy; {new Date().getFullYear()} Lindsey Simon. All rights reserved.
 				</p>
