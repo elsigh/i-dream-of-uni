@@ -108,8 +108,7 @@ export default function HomePage() {
 							Lindsey Simon
 						</h1>
 						<p className="text-xl text-slate-300 mt-1">
-							Builder of products, teams, and communities. Advisor. Musician.
-							Conductor.
+							Builder: products, teams, and communities. Musician. Cook. Web Developer.
 						</p>
 						<div className="mt-4 flex gap-3">
 							<Button
@@ -160,24 +159,18 @@ export default function HomePage() {
 						</div>
 					</div>
 				</div>
-			</header>
-
-			<div className="w-full relative py-16">
 				<div
-					className="absolute inset-0 opacity-20 bg-center bg-no-repeat bg-contain"
+					className="absolute inset-0 opacity-10 bg-center bg-no-repeat bg-contain"
 					style={{ backgroundImage: "url(/vercel.png)" }}
 				/>
-				<div className="container mx-auto px-4 relative z-10 text-center">
-					<h2 className="text-4xl font-bold text-white">Powered by Vercel</h2>
-				</div>
-			</div>
+			</header>
 
-			<main className="container mx-auto px-4 py-8 flex-grow">
+			<main className="container mx-auto px-4 py-4 flex-grow">
 				<section id="about" className="mb-12 md:mb-16">
 					<h2 className="text-3xl font-semibold mb-6 text-white">About Me</h2>
 					<div className="space-y-4 text-slate-300 text-lg leading-relaxed">
 						<p>
-							I'm an engineer with a passion for the web platform, developer
+							I'm an engineer with a passion for the web, developer
 							experience, and fostering innovation. My journey has taken me
 							through impactful roles at companies like Vercel, Google (Chrome,
 							Web Platform), and startups, where I've had the privilege to work
