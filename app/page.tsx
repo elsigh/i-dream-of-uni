@@ -57,6 +57,12 @@ const projects: Project[] = [
 
 const talks: Talk[] = [
 	{
+		title: "How Vercel uses AI",
+		platform: "Jam.dev - AI Speedrun",
+		href:"https://youtu.be/nGRyvYax1BI",
+		icon: Mic,
+	},
+	{
 		title: "Developer-led Innovation and the Future of Frontend",
 		platform: "Spotify - Modern Web Podcast",
 		href: "https://open.spotify.com/episode/1oW2O5Ez7su7uxyj9CuQmi",
@@ -160,7 +166,7 @@ export default function HomePage() {
 					</div>
 				</div>
 				<div
-					className="absolute inset-0 opacity-10 bg-center bg-no-repeat bg-contain"
+					className="absolute inset-0 opacity-10 bg-center bg-no-repeat bg-contain pointer-events-none"
 					style={{ backgroundImage: "url(/vercel.png)" }}
 				/>
 			</header>
