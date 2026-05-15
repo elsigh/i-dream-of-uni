@@ -20,7 +20,7 @@ export const profile = {
     'I work on developer experience, engineering teams, and the systems that make the web faster and more creative.',
   about: [
     "I'm an engineer with a long-running obsession for the web: making it faster, more understandable, and more useful for the people building on it.",
-    "At Vercel, I work with teams building the frontend cloud and the tools developers use to ship. Before that, I spent years across Google, Quip, Shift, and startups, working on web platform, translation, collaboration, commerce, and developer tooling.",
+    "At Vercel, I work with teams building tools that help developers ship to the web. Before that, I spent years across Google, Quip, Shift, and startups, working on web platform, translation, collaboration, commerce, and developer tooling.",
     "Outside of work, I write songs, cook, play table tennis, and spend time in the woods looking for fungi. The common thread is the same: craft, taste, curiosity, and learning from people who care deeply about what they do.",
   ],
 }
@@ -30,7 +30,7 @@ export const resumeHighlights = [
     period: 'Now',
     label: 'Vercel',
     description:
-      'VP of Engineering, focused on frontend cloud, developer experience, and AI-augmented engineering workflows.',
+      'VP of Engineering, focused on the platform that helps developers ship to the web, developer experience, and AI-augmented engineering workflows.',
   },
   {
     period: '2010s',
@@ -175,7 +175,7 @@ export const talks: Array<Talk> = [
     archiveSlug: 'modern-web-podcast',
   },
   {
-    title: 'Frontend Cloud: Unleashing Creative Power',
+    title: 'Deploying to the web and developer enablement',
     event: 'Tech Leaders Unplugged',
     year: '2023',
     href: 'https://www.techleadersunplugged.com/frontend-cloud-unleashing-creative-power/',

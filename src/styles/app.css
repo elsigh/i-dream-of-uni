@@ -146,8 +146,9 @@ svg {
 
 .wordmark {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.5rem;
+  line-height: 1;
   font-weight: 500;
   font-size: 0.9rem;
   letter-spacing: -0.01em;
@@ -155,15 +156,18 @@ svg {
 }
 
 .wordmark__mark {
-  width: 0.85rem;
-  height: 0.75rem;
+  width: 1rem;
+  height: 0.9rem;
   color: var(--fg);
   flex: none;
+  display: block;
 }
 
 .wordmark__text {
   font-weight: 600;
+  font-size: 0.95rem;
   letter-spacing: -0.015em;
+  line-height: 1;
 }
 
 .wordmark__branch {
@@ -172,6 +176,7 @@ svg {
   font-size: 0.78rem;
   font-weight: 400;
   letter-spacing: 0;
+  line-height: 1;
 }
 
 .site-nav {

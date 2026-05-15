@@ -105,7 +105,7 @@ A conversation about distinguishing failure from opportunity, the relationship b
 
   'frontend-cloud': {
     slug: 'frontend-cloud',
-    title: 'Frontend Cloud: Unleashing Creative Power',
+    title: 'Deploying to the web and developer enablement',
     sourceLabel: 'Tech Leaders Unplugged',
     originalHref:
       'https://www.techleadersunplugged.com/frontend-cloud-unleashing-creative-power/',
@@ -119,13 +119,13 @@ A conversation about distinguishing failure from opportunity, the relationship b
 
 ## Episode description
 
-A conversation about open-source solutions for the next generation of developers and how the frontend cloud model unleashes creative power for product teams.
+A conversation about how Vercel approaches deploying to the web and the tooling that enables developers to ship faster, plus the open-source projects that support the next generation of builders.
 
 ## Topics
 
-- Frontend cloud platforms
-- Open-source software solutions
-- Tools and approaches for the next generation of developers
+- Deploying to the web
+- Developer enablement and tooling
+- Open-source software for builders
 - Engineering leadership at Vercel
 `.trim(),
   },
