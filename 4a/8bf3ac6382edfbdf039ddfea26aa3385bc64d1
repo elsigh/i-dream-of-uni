@@ -1,0 +1,39 @@
+src/styles/app.css
+  s_f66df8133c6889::t_0ca7b6bca95e22 672
+  s_f66df8133c6889::t_f8a0ab600c0def 705,712-875
+  s_f66df8133c6889::t_b32df8f4ce600a 148-152,157-174
+src/routeTree.gen.ts
+  s_f66df8133c6889::t_e10eb7fd5b6979 16,38-42,49,56,64,68,70-71,79,112-118,127
+src/routes/__root.tsx
+  s_f66df8133c6889::t_c1c8e1bd05cdbd 72-81
+package.json
+  s_f66df8133c6889::t_7bce79b93c2dce 20
+public/favicon.svg
+  s_f66df8133c6889::t_416fcd1dda0ac6 2-10
+pnpm-lock.yaml
+  ai_agent 29-31,2339-2343,5466
+src/routes/talks.tsx
+  s_f66df8133c6889::t_08ec6fe46790d2 1-2,13,17-19,24,33-52,54,59-62,66,70-89,91
+src/routes/archive/$slug.tsx
+  s_f66df8133c6889::t_4674e7f460a1f2 1-91
+src/content/archives.ts
+  s_f66df8133c6889::t_ecb18245d86b74 1-481
+src/siteData.ts
+  s_f66df8133c6889::t_e3efd688d51107 142-143,154,161,168,175,182,189,196,203,207-214,219,225,231
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "4a8bf3ac6382edfbdf039ddfea26aa3385bc64d1",
+  "prompts": {},
+  "sessions": {
+    "s_f66df8133c6889": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "90ed4d04-22b7-46c9-a5bc-b37a9ba3ebcc",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "elsigh <elsigh@gmail.com>"
+    }
+  }
+}
