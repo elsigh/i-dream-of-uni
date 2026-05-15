@@ -34,6 +34,7 @@ pnpm build
 
 Production deploys are handled by Vercel's Git integration. Pushes to `main`
 deploy the linked `elsigh-pro` project `i-dream-of-uni`.
+Local prebuilt deployment output is intentionally not part of the workflow.
 
 The project keeps the existing production domain:
 
