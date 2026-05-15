@@ -145,10 +145,33 @@ svg {
 }
 
 .wordmark {
-  font-weight: 600;
-  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
   letter-spacing: -0.01em;
   color: var(--fg);
+}
+
+.wordmark__mark {
+  width: 0.85rem;
+  height: 0.75rem;
+  color: var(--fg);
+  flex: none;
+}
+
+.wordmark__text {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.wordmark__branch {
+  color: var(--fg-subtle);
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .site-nav {
@@ -646,7 +669,7 @@ p {
 }
 
 .talk-card {
-  grid-template-columns: 60px minmax(0, 1fr) auto;
+  grid-template-columns: 60px minmax(0, 1fr);
 }
 
 .talk-card > svg:first-child {
@@ -679,11 +702,177 @@ p {
 }
 
 .writing-card {
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .writing-card > svg:first-child {
   display: none;
+}
+
+.archive-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.archive-actions .text-link {
+  font-size: 0.85rem;
+}
+
+.archive-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0;
+  color: var(--fg-subtle);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.archive-meta__link {
+  font-size: 0.85rem;
+}
+
+.archive-note {
+  margin: 1.5rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--fg-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.archive-prose {
+  margin-top: 2.5rem;
+  color: var(--fg);
+  max-width: 70ch;
+}
+
+.archive-prose h2,
+.archive-prose h3,
+.archive-prose h4 {
+  margin: 2.5rem 0 0.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.archive-prose h2 {
+  font-size: 1.4rem;
+}
+
+.archive-prose h3 {
+  font-size: 1.1rem;
+}
+
+.archive-prose h4 {
+  font-size: 0.95rem;
+  color: var(--fg-muted);
+}
+
+.archive-prose p {
+  margin: 0 0 1.1rem;
+  color: var(--fg-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.archive-prose strong {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.archive-prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.archive-prose a:hover {
+  text-decoration-color: var(--accent);
+}
+
+.archive-prose ul,
+.archive-prose ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+  color: var(--fg-muted);
+}
+
+.archive-prose li {
+  margin-bottom: 0.4rem;
+  line-height: 1.65;
+}
+
+.archive-prose blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--fg-muted);
+  font-style: italic;
+}
+
+.archive-prose code {
+  padding: 0.12rem 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--accent);
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+}
+
+.archive-prose pre {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow-x: auto;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.archive-prose pre code {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--fg);
+}
+
+.archive-prose hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.archive-prose table {
+  width: 100%;
+  margin: 0 0 1.5rem;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.archive-prose th,
+.archive-prose td {
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  color: var(--fg-muted);
+}
+
+.archive-prose th {
+  color: var(--fg);
+  font-weight: 500;
+  border-bottom-color: var(--line-strong);
 }
 
 .writing-card h3 {

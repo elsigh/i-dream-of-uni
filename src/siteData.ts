@@ -139,6 +139,8 @@ export type Talk = {
   year: string
   href: string
   description?: string
+  /** Matching key in talkArchives. */
+  archiveSlug?: string
 }
 
 export const talks: Array<Talk> = [
@@ -149,65 +151,83 @@ export const talks: Array<Talk> = [
     href: 'https://gitnation.com/person/lindsey_simon',
     description:
       'Clear thinking, productive failure, and shared vocabulary for AI-assisted engineering.',
+    archiveSlug: 'effective-thinking',
   },
   {
     title: 'How Vercel Uses AI',
     event: 'Jam.dev AI Speedrun',
     year: '2025',
     href: 'https://youtu.be/nGRyvYax1BI',
+    archiveSlug: 'how-vercel-uses-ai',
   },
   {
     title: 'Conducting Interviews and Interviewing in the Age of AI Tools',
     event: 'TechLead Conference 2024',
     year: '2024',
     href: 'https://gitnation.com/person/lindsey_simon',
+    archiveSlug: 'conducting-interviews-ai',
   },
   {
     title: 'Developer-led Innovation and the Future of Frontend',
     event: 'Modern Web Podcast',
     year: '2024',
     href: 'https://open.spotify.com/episode/1oW2O5Ez7su7uxyj9CuQmi',
+    archiveSlug: 'modern-web-podcast',
   },
   {
     title: 'Frontend Cloud: Unleashing Creative Power',
     event: 'Tech Leaders Unplugged',
     year: '2023',
     href: 'https://www.techleadersunplugged.com/frontend-cloud-unleashing-creative-power/',
+    archiveSlug: 'frontend-cloud',
   },
   {
     title: 'Your Career Path: From the Outside, from the Inside',
     event: 'ELC Annual 2022',
     year: '2022',
     href: 'https://sfelc.com/annual2022/topics/your-career-path-from-the-outside-from-the-inside',
+    archiveSlug: 'career-path',
   },
   {
     title: 'Faster, Safer, More Consistent Browsers',
     event: 'Velocity 2012',
     year: '2012',
     href: 'https://www.youtube.com/watch?v=RwvcjPE2Rm0',
+    archiveSlug: 'faster-safer-browsers',
   },
   {
     title: 'Minimizing Browser Reflow',
     event: 'Google Search Central',
     year: '2010',
     href: 'https://developers.google.com/speed/docs/insights/browser-reflow',
+    archiveSlug: 'minimizing-browser-reflow',
   },
 ]
 
-export const writing = [
+export type WritingItem = {
+  title: string
+  publisher: string
+  href: string
+  archiveSlug?: string
+}
+
+export const writing: Array<WritingItem> = [
   {
     title: 'Measuring the Performance of Task Completion',
     publisher: 'Web Performance Calendar',
     href: 'https://calendar.perfplanet.com/2010/measuring-the-performance-of-task-completion/',
+    archiveSlug: 'measuring-task-completion',
   },
   {
     title: 'The XSLDataGrid: XSLT Rocks Ajax',
     publisher: 'XML.com',
     href: 'https://www.xml.com/pub/a/2006/08/23/xsldatagrid-xslt-ajax.html',
+    archiveSlug: 'xsldatagrid',
   },
   {
     title: 'Browserscope security tests',
     publisher: 'High Performance Web Sites',
     href: 'https://www.stevesouders.com/blog/2010/02/19/new-browserscope-security-tests/',
+    archiveSlug: 'browserscope-security',
   },
 ]

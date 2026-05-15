@@ -69,7 +69,16 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         </a>
         <header className="site-header">
           <Link className="wordmark" to="/" activeOptions={{ exact: true }}>
-            Lindsey Simon
+            <svg
+              className="wordmark__mark"
+              viewBox="0 0 16 14"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M8 0L16 14H0L8 0Z" fill="currentColor" />
+            </svg>
+            <span className="wordmark__text">elsigh</span>
+            <span className="wordmark__branch">(main)</span>
           </Link>
           <nav className="site-nav" aria-label="Main navigation">
             <Link
