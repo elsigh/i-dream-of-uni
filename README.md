@@ -32,12 +32,8 @@ pnpm build
 
 ## Deploy
 
-The repo is linked to the Vercel `elsigh-pro` team project `v0-i-dream-of-uni`.
-
-```sh
-vercel build --prod --scope elsigh-pro
-vercel deploy --prebuilt --prod --scope elsigh-pro
-```
+Production deploys are handled by Vercel's Git integration. Pushes to `main`
+deploy the linked `elsigh-pro` project `i-dream-of-uni`.
 
 The project keeps the existing production domain:
 
