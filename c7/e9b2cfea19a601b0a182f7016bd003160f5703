@@ -1,0 +1,24 @@
+README.md
+  s_dd4c769872af7f::t_35bdd208e27b2a 36
+  s_dd4c769872af7f::t_9041ceeda9ccdd 35
+.gitignore
+  s_dd4c769872af7f::t_9041ceeda9ccdd 8-14
+vercel.json
+  s_dd4c769872af7f::t_9041ceeda9ccdd 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "c7e9b2cfea19a601b0a182f7016bd003160f5703",
+  "prompts": {},
+  "sessions": {
+    "s_dd4c769872af7f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e2c9c-e16f-7ca1-b676-c399ebde1a98",
+        "model": "gpt-5.5"
+      },
+      "human_author": "elsigh <elsigh@gmail.com>"
+    }
+  }
+}
