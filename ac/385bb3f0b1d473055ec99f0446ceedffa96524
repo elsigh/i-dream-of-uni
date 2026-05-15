@@ -1,0 +1,30 @@
+src/components/DefaultCatchBoundary.tsx
+  s_dd4c769872af7f::t_3b7d350dd5a24f 1-54
+.gitignore
+  s_dd4c769872af7f::t_5ad9e766976a39 1-4,6-8,10-14,18-23
+  s_dd4c769872af7f::t_3b7d350dd5a24f 15,17
+src/styles/app.css
+  s_dd4c769872af7f::t_b39d1bbfae5f9a 1-918
+vercel.json
+  s_dd4c769872af7f::t_e19b600bb1781e 1-6
+README.md
+  s_dd4c769872af7f::t_3b7d350dd5a24f 1,3,5,7-12,14,16,18-21,23,25,27,29-31,33,35-45
+src/components/NotFound.tsx
+  s_dd4c769872af7f::t_3b7d350dd5a24f 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "ac385bb3f0b1d473055ec99f0446ceedffa96524",
+  "prompts": {},
+  "sessions": {
+    "s_dd4c769872af7f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e2c9c-e16f-7ca1-b676-c399ebde1a98",
+        "model": "gpt-5.5"
+      },
+      "human_author": "elsigh <elsigh@gmail.com>"
+    }
+  }
+}
