@@ -1,0 +1,19 @@
+README.md
+  s_dd4c769872af7f::t_34d34f7c2718b1 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "8b0475b8c1671d5ac49763b24caaa0d000c08b6c",
+  "prompts": {},
+  "sessions": {
+    "s_dd4c769872af7f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e2c9c-e16f-7ca1-b676-c399ebde1a98",
+        "model": "gpt-5.5"
+      },
+      "human_author": "elsigh <elsigh@gmail.com>"
+    }
+  }
+}
