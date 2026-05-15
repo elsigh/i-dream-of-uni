@@ -1,30 +1,45 @@
-# I Dream of Uni
+# Lindsey Simon Portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Personal website for Lindsey Simon at [idreamofuni.com](https://www.idreamofuni.com).
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/elsigh-pro/v0-i-dream-of-uni)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/zvnw2zWzo4q)
+## Stack
 
-## Overview
+- TanStack Start
+- TanStack Router
+- React 19
+- Tailwind CSS v4
+- shadcn/ui
+- Vercel
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Development
 
-## Deployment
+From your terminal:
 
-Your project is live at:
+```sh
+pnpm install
+pnpm dev
+```
 
-**[https://vercel.com/elsigh-pro/v0-i-dream-of-uni](https://vercel.com/elsigh-pro/v0-i-dream-of-uni)**
+This starts your app in development mode, rebuilding assets on file changes.
 
-## Build your app
+## Build
 
-Continue building your app on:
+To build the app for production:
 
-**[https://v0.dev/chat/projects/zvnw2zWzo4q](https://v0.dev/chat/projects/zvnw2zWzo4q)**
+```sh
+pnpm build
+```
 
-## How It Works
+## Deploy
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+The repo is linked to the Vercel `elsigh-pro` team project `v0-i-dream-of-uni`.
+
+```sh
+vercel build --prod --scope elsigh-pro
+vercel deploy --prebuilt --prod --scope elsigh-pro
+```
+
+The project keeps the existing production domain:
+
+- `www.idreamofuni.com`
+- `idreamofuni.com`
